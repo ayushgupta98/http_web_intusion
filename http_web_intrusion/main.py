@@ -148,6 +148,15 @@ cv_results = cross_validate(lasso, X1, y, cv=20)
 print("SGD CV: ",cv_results['test_score'].mean())
 
 """
+Multilayer Perceptron
+"""
+from sklearn.neural_network import MLPClassifier
+lasso = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(5, 2), random_state=1)
+cv_results = cross_validate(lasso, X1, y, cv=20)
+print("MLP: ", cv_results['test_score'].mean())
+
+
+"""
 Linear Discriminant Analysis
 """
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
