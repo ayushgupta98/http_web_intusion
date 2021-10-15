@@ -1,7 +1,7 @@
 # http_web_intusion
 Predict whether the HTTP request is normal or an anomaly depending on the set of parameters using various Machine Learning Models.
 
-# Features used
+# Features taken in consideration for this project
 1. HTTP Method
 2. Length of URL
 3. Length of Argument
@@ -24,3 +24,15 @@ Predict whether the HTTP request is normal or an anomaly depending on the set of
 4. Support Vector Machine (SVM)
 5. Linear Discriminant Analysis (LDA)
 6. CART or Bagging Classifier
+
+# Results
+Algorithm                    |  Accuracy |
+-----------------------------|-----------|
+Stochastic Gradient Descent  | 95.86     |
+Multilayer Perceptron	       | 98.74     |
+Support Vector Machine	     | 95.98     |
+Linear Discriminant Analysis | 92.34     |
+Bagging Classifier           | 99.31     |
+
+# Springer Chapter Link: 
+[HTTP Request Anomaly Detection using Machine Learning](https://link.springer.com/chapter/10.1007/978-981-33-4859-2_44)  
